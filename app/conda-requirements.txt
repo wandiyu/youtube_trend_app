@@ -1,0 +1,13 @@
+pandas
+bokeh==2.2.1
+dill
+flask
+jinja2
+pip
+simplejson
+nomkl
+sklearn
+glob
+wordcloud
+nltk
+vaderSentiment
