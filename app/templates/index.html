@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<style>
+body {
+  background-image: url('static/image2.jpg');
+}
+</style>
+
+ <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
@@ -11,21 +17,23 @@
     <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   </head>
-  <body>
+  <body  class="text-center">
 	<nav class="navbar navbar-expand-sm bg-light">
-		<a class="navbar-brand" href="#">YouTube trend App</a>
+		<a class="navbar-brand" href="#">YouTube food trend App</a>
 			<ul class = 'navbar-nav'>
 				<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="https://github.com/wandiyu/flask_app">Github</a></li>
+				<li class="nav-item"><a class="nav-link" href="https://github.com/wandiyu/youtube_trend_app">Github</a></li>
+				<li class="nav-item"><a class="nav-link" href="/info">Info</a></li>
 			</ul>
 	</nav class="navbar">
    <section id = "prediction">
 	 <div class="container">
       <form action="graph" method="GET">
-		<label for="kw">Keywords, topics, or a title:</label><br>
-		<textarea name="kw" rows="5" cols="30"></textarea>
+		<h1 class="h3 mb-3 font-weight-bold text-white"></br></br></label>
+		<label for="kw"></label><br>
+		<textarea name="kw" rows="5" cols="30" style="background-color:whitesmoke;" placeholder="Keywords, topics, or a title..." ></textarea>
 		<br><br>
-		<input type="submit" value="submit">
+		<input type="submit" value="submit" class="btn btn-primary">
 	  </form>    	
     </div>
 	</section>

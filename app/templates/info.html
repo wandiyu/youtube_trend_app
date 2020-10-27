@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="author" content="@gotoariel">
+    <!-- <link rel="icon" href="favicon.ico"> -->
+    <title>Youtube Trend App</title>
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body class="text-center">
+
+
+    <nav class="navbar navbar-expand-sm bg-light">
+        <a class="navbar-brand" href="/">YouTube food trend App</a>
+            <ul class = 'navbar-nav'>
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/wandiyu/youtube_trend_app">Github</a></li>
+                <li class="nav-item"><a class="nav-link" href="/info">Info</a></li>
+            </ul>
+    </nav class="navbar">
+   <section id = "contact">
+     <div class="container">
+
+	
+    	<h2> </br>Contact information </br></h2>
+		<h3><a href="mailto:wandi.yu@mg.thedataincubator.com"> Email: wandi.yu@mg.thedataincubator.com</a> </h3>
+		<h2> </br></br>Data </br></h2>
+		<h3><a href="https://developers.google.com/youtube/v3"> Youtube API</a></br> Top 50 videos per week </br> 2019.09.08-now </br></br> </h3>
+		<h2> Metrics</br></h2>
+		<figure>
+  			<img src="static/equation1.jpeg" alt="Trulli" style="width:50%">
+		</figure> 
+	    <figure>
+            <img src="static/equation2.jpeg" alt="Trulli" style="width:48%">
+        </figure>
+		<h2> Machine Learning model </br></h2>
+		<h3><a href = "https://www.nltk.org/" text-gray>NLP model: NLTK</a></h3>  
+		<h3><a href = "https://pypi.org/project/vaderSentiment/">Sentiment analysis: vaderSentiment</a></h3>
+		<h3>Trend analysis: LinearRegression + seasonal cycle + ARIMA</h3>
+		<h2></br></br> Model performance </br></h2>
+		{{ script|safe }}
+		{{ div|safe }}
+		<h6 style="color:grey;">test cases: bacon,baklava,bird,brain,bread,bun,cake,chicken,chocolate,cooky,croissant,cupcake,danish,date,donut,dumpling,eater,fryer,grape,</br>hamburger,leg,meat,mussel,mutton,noodle,orange,pasta,pie,pork,potato,pumpkin,raspberry,rib,seafood,shrimp,snail,steak,swordfish,tomato,</br>tortilla,watermelon </br> 4 weeks in September 2020</h6>
+	</div>
+    </section>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.1.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.2.1.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.2.1.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
