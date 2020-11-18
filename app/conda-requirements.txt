@@ -1,13 +1,12 @@
 pandas
 bokeh==2.2.1
 dill
+statsmodels
+matplotlib
 flask
 jinja2
 pip
 simplejson
 nomkl
-sklearn
-glob
-wordcloud
 nltk
-vaderSentiment
+scikit-learn==0.23.1

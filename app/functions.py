@@ -4,15 +4,13 @@ import sklearn
 from sklearn import base
 from glob import glob 
 import matplotlib.pyplot as plt
-from wordcloud import WordCloud, STOPWORDS
 from nltk.tokenize import word_tokenize
 from nltk import pos_tag
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer() 
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-analyzer = SentimentIntensityAnalyzer()
 from statsmodels.tsa.arima.model import ARIMA
-
+import nltk
+nltk.data.path.append('./nltk_data/')
 
 from nltk.corpus import wordnet as wn
 def identify_keywords(string):
@@ -160,7 +158,10 @@ def draw_tabs(kw,t0_new):
     for j in range(2):
         f = time_series(LinearRegression(),get_seasonal(),residual())
         f.fit(x2[j].index,x2[j])
-        xout.append(f.predict(t_1))
+        prediction = f.predict(t_1)
+        prediction[prediction>4] = 4
+        prediction[prediction<0] = 0
+        xout.append(prediction)
     titles = ['views rating',
               'likes rating']
     p = []
